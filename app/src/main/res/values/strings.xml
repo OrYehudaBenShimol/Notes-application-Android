@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="exitTxt">Exit</string>
+    <string name="settingsTxt">Settings</string>
+    <string name="ok">Accept</string>
+    <string name="cancel">cancel</string>
+
+    <string name="confirmationTxt">Are you sure?</string>
+    <string name="method_inner_file">Using inner file saving method.</string>
+    <string name="method_sp">Using SP saving method.</string>
+    <string name="countries_saved">Remember deleted countries.</string>
+    <string name="countries_unsaved">Forget deleted countries.</string>
+    <string name="todo">TODO</string>
+    <string name="newNoteTxt">New Note</string>
+    <string name="newDateNoteTxt">New Date Note</string>
+    <string name="pick_time">Pick Time</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

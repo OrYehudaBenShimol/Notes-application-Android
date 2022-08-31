@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finaleProject">
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/postit"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/postit"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.finaleProject">
+        <service
+            android:name=".NotificationService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <receiver
+            android:name=".SMSReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.example.finaleProject.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
